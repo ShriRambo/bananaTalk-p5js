@@ -1,0 +1,400 @@
+<!doctype html>
+<html>
+
+	<head>
+		<!--<base href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/"/>-->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Banana Talk | p5*</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+	
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+			
+		<!-- My custom stylesheet -->
+		<link rel="stylesheet" href="./myStyle.css">
+
+
+	</head>
+
+
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				 <!-- Slide Template -->
+				<!-- <section>
+					<h3 ></h3>
+					<br><br>
+				</section> -->
+
+
+
+				<!-- ###############################################################################-->
+				<!-- ###############################################################################-->
+				<!-- ###############################################################################-->
+				<!-- ###############################################################################-->
+				<!-- #########################           Cover       ###############################-->
+				<!-- ###############################################################################-->
+				<!-- ###############################################################################-->
+				<!-- ###############################################################################-->
+
+
+				<!--  Slide 1 -->
+				<section data-background-iframe="./Resources/Matrix/index.html" style="margin: 0%;padding:0%;"
+					data-background-interactive>
+					<div id="">
+						<hr style="background-color: rgb(14, 126, 14);filter: blur(1px); ">
+						<h3 id="matrixTitle" style="color: #d9ffbf">Welcome </h3>
+						<hr style="background-color: rgb(14, 126, 14); color:rgb(14, 126, 14); filter: blur(1px); ">
+					</div>
+
+				</section>
+
+
+				<section>
+					<h3 style="text-transform: none;font-family: monospace;"> 🍌Talk</h3><hr>
+					<h4 style="text-transform: none;font-family: monospace;"> by Shriram A.</h4>
+				</section>
+
+
+
+
+
+				<!-- ###############################################################################-->
+
+				<section data-background="https://media.giphy.com/media/2H67VmB5UEBmU/giphy.gif">
+					<h3> What is Processing? &#129300</h3>
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Processing</h3><hr>
+						<ul>
+							<li>A software for visual arts</li>
+							<li>Java based framework</li>
+							<li>Free and Open Source software</li>
+							<li>Download from <a href="https://processing.org/">Processing.org</a></li>
+						</ul>
+					</section>
+
+
+					<section>
+						<h3>Processing Flavours</h3>
+						<hr>
+						<ul>
+							<li>Processing: Java mode</li>
+							<li>Processing.py: Python mode</li>
+							<li>p5.js: Javascript mode</li>
+							<li>Processing for android</li>
+							<li>Processing for Pi</li>
+						</ul>	
+					</section>
+
+					<section>
+						<h3>Processing IDE</h3>
+						<hr>
+						<img src="./Resources/processing.PNG" alt="IDE">
+					</section>
+
+					<section>
+						<h3 style="text-transform: none">p5.js</h3><hr>
+						<ul>
+							<li>Web based framework</li>
+							<li>No sofware needed (apart from browser)</li>
+							<li>Easy to integrate with webpages and publish</li>
+							<li>Can be used alongside other CSS and Javascript frameworks</li>
+						</ul>
+					</section>
+
+
+				</section>
+
+
+				
+				<section data-background="https://media.giphy.com/media/11sBLVxNs7v6WA/giphy.gif">
+					<h1 style="text-transform: none; color:#ffffff">
+						Let's Get Started
+					</h1>
+				</section>
+
+				<section>
+
+				<section data-markdown>
+					<textarea data-template>
+						<h3 style="text-transform: none; font-family:monospace">index.html</h3><hr>
+
+						```
+						<!DOCTYPE html>
+						<html>
+						<head>
+							<meta charset="UTF-8">
+							<script language="javascript" type="text/javascript"
+								src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js">
+							</script>
+							<script language="javascript" type="text/javascript" 
+								src="sketch.js"></script>
+						</head>
+						<body ></body>
+						</html>
+						```
+					</textarea>
+				</section>
+
+
+
+				<section data-markdown>
+					<textarea data-template>
+						<h3 style="text-transform: none; font-family:monospace">sketch.js</h3><hr>
+
+						```
+								var foo, bar;
+
+								function setup(){
+									createCanvas(400,400);
+									background(51);
+								}
+
+								function draw(){
+									fill(225);
+									ellipse(mouseX,mouseY,60,60);
+								}
+						```
+						<a href="./Resources/Demo/index.html">Output</a>
+					</textarea>
+				</section>
+
+				<section>
+					<h3 style="text-transform: none">The Canvas</h3><hr>
+					<img src="./Resources/canvas.png" alt="canvas" style="border: none;box-shadow:none">
+				</section>
+
+				<section>
+					<h3 style="text-transform: none">Basic Functions</h3><hr>
+					<ul>
+						<li><span style="font-family: monospace">setup(), draw()</span> </li>
+						<li><span style="font-family: monospace">loop(), noLoop()</span> </li>
+						<li><span style="font-family: monospace">ellipse(x,y,a,b)</span> </li>
+						<li><span style="font-family: monospace">line(x1, y1, x2, y2)</span> </li>
+						<li><span style="font-family: monospace">rect(x,y,width,height)</span> </li>
+						e.t.c.
+					</ul>
+				</section>
+
+				<section>
+					<h3 style="text-transform: none">System Constants and Variables</h3>
+					<hr>
+					<ul>
+						<li><span style="font-family: monospace">width, height</span> </li>
+						<li><span style="font-family: monospace">mouseX, mouseY</span> </li>
+						<li><span style="font-family: monospace">PI, TWO_PI, HALF_PI, QUARTER_PI</span> </li>
+						<li><span style="font-family: monospace">mouseIsPressed, keyIsPressed</span> </li>
+						e.t.c
+					</ul>
+				</section>
+
+
+				<!-- Getting started ends -->
+				</section>
+
+
+				<!-- Demo -->
+				<section>
+					<h3>Example</h3><hr>
+				</section>
+
+				<section>
+
+					<section>
+						<h3>Phyllotaxis</h3><hr>
+						<img src="https://live.staticflickr.com/3279/2585478728_f6370052c7.jpg" width="45%" alt="Flower">
+						<img src="https://i.redd.it/9zs40gysmuf21.jpg" alt="plant" width="45%">
+					</section>
+
+					<section>
+						<h3>Smart Mother Nature</h3> <hr>
+						<ul>
+							<li>Optimal packing of $n$ seeds</li>
+							<li>For seed $i$</li>
+							<ul>
+								<li>$r_i \propto \sqrt{i}$ </li>
+								<li>$\theta_i = iG2\pi$</li>
+							</ul>
+							<li>$G=$ 1.61803398875  &emsp; The Golden Ratio</li>
+						</ul>
+						<p><a href="./Resources/Demo2/index.html">Result</a></p>
+					</section>
+
+
+					<section>
+						<h3>Coding from Scratch</h3>
+						<h3 style="text-transform: none">----------------------------or----------------------------</h3>
+						<h3>Explaination of Code</h3>
+					</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						### Global Constants
+						<hr>
+
+						```
+								var gratio = 1.6180339 // Golden Ratio
+								var rmax = 200; // Maximum radius
+								var npts = 400;  // Number of points
+
+								var slider;  // The slider
+						```
+					</textarea>
+				</section>
+
+				<section data-markdown>
+					<textarea data-template>
+						<h3 style="text-transform: none;font-family:monospace">setup()</h3>
+						<hr>
+
+						```javascript
+								function setup() {
+									createCanvas(600, 600);
+									background(51);
+
+									fill(230);
+									noStroke();
+
+									slider = createSlider(1, 2, 1.6180339, 0.0001);
+								}
+						```
+					</textarea>
+				</section>
+
+
+				<section data-markdown>
+					<textarea data-template>
+						<h3 style="text-transform: none;font-family:monospace">draw()</h3>
+						<hr>
+
+						```javascript
+								function draw() {
+									background(51);
+									translate(width / 2, height / 2);
+									gratio = slider.value();
+
+									for (let i = 0; i < npts; i++) { 
+										let a = i * gratio * 2 * PI; 
+										let r = rmax * sqrt(i) / sqrt(npts); 
+										let x = r * cos(a);
+										let y = r * sin(a);
+										let rad = 10 - 5 * i / npts; 
+										ellipse(x, y, rad); 
+									}
+							 	}
+
+						```
+					</textarea>
+				</section>
+
+
+				</section>
+
+
+
+
+
+
+
+				<section>
+					<h3>
+						Other Sketches
+					</h3><hr>
+					<ul>
+						<li><a href="./Resources/Tree Rings/index.html">Tree Rings</a></li>
+						<li><a href="./Resources/Face Button/index.html">Follow the cursor</a></li>
+						<li><a href="./Resources/Image doodle/index.html">Doodle</a></li>
+						<li><a href="https://shrirambo.github.io/p5Gallery/Resources/Raycasting-3D-Maze/index.html">3D Maze</a></li>
+						<li><a href="https://shrirambo.github.io/p5Gallery/Resources/Jumpy%20Banana/index.html">Banana Jump</a></li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h3>Resources</h3>
+					<hr>
+
+					<ul>
+						<li><a href="https://p5js.org/reference/">p5js reference</a></li>
+						<li><a href="https://www.openprocessing.org/">Openprocessing.org</a></li>
+						<li><a href="https://editor.p5js.org/">p5js web editor</a></li>
+						<li><a href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw">Coding Train</a> youtube channel</li>
+					</ul>
+				</section>
+
+		
+					
+				<section data-background="https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif">
+				</section>
+
+
+
+				<!-- ###############################################################################-->
+				<!-- ###############################################################################-->
+				<!-- ########################   End of Presentation    #############################-->
+				<!-- ###############################################################################-->
+				<!-- ###############################################################################-->
+				<!-- ###############################################################################-->
+					
+				
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				math: {
+						mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+					},
+
+				// Push each slide change to the browser history
+				history: true,
+
+				transition: 'convex', // none/fade/slide/convex/concave/zoom
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+
+
+			});
+
+			Reveal.configure({ slideNumber: true });
+		</script>
+	</body>
+</html>
