@@ -2,11 +2,11 @@ var symbolSize = 30
 var streams = [];
 var Canvas
 
-var looping = false
+var looping = true
 var track
 
 function preload(){
-    track = loadSound('./ClubbedToDeath.mp3');
+    //track = loadSound('./ClubbedToDeath.mp3');
 }
 
 function setup() {
@@ -25,7 +25,7 @@ function setup() {
       x+=symbolSize;
 }
 
-noLoop();
+ setTimeout( function(){noLoop()}, 30000);
 
   
 }
@@ -105,12 +105,12 @@ function Stream() {
 
 function mousePressed() {
     if (looping){
-        noLoop();
-        track.pause();
+        //noLoop();
+       // track.pause();
         looping = false
     }  else{
-        loop();
-        track.play();
+        //loop();
+       // track.play();
         looping = true;
     } 
 }
